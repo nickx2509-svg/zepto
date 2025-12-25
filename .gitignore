@@ -1,7 +1,55 @@
-node_modules/
-.next
-out
-
+# =========================
+# ENV & SECRETS
+# =========================
 .env
-.env.test
-.env.production
+.env.*
+!.env.example
+
+# =========================
+# DEPENDENCIES
+# =========================
+node_modules/
+
+# =========================
+# NEXT.JS BUILD
+# =========================
+.next/
+out/
+dist/
+
+# =========================
+# LOGS
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# CACHE & COVERAGE
+# =========================
+.cache/
+.parcel-cache/
+.nyc_output/
+coverage/
+.eslintcache
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# EDITORS
+# =========================
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# DATABASE / LOCAL STORAGE
+# =========================
+*.db
+*.sqlite
+.dynamodb/
